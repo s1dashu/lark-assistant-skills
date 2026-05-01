@@ -2,7 +2,7 @@
 
 Agent Skills for Lark/Feishu personal assistant workflows.
 
-This repository contains a collection of independent `lark-*` skills for work planning, reporting, meeting preparation, mailbox triage, project memory, and work coaching. Each workflow is packaged as its own `SKILL.md` so hosts that expose skills as slash commands can provide command entries such as `/lark-daily-report` and `/lark-monthly-report`.
+This repository contains a collection of independent `lark-*` skills for work planning, reporting, meeting preparation, mailbox triage, project summaries, and knowledge capture. Each workflow is packaged as its own `SKILL.md` so hosts that expose skills as slash commands can provide command entries such as `/lark-daily-report` and `/lark-monthly-report`.
 
 ## Requirements
 
@@ -18,37 +18,32 @@ lark-cli auth login --domain calendar,task,docs,drive,im,mail,vc,minutes,okr
 
 ## Skills
 
-Setup:
-- `/lark-setup`: initialize data-source scope, privacy boundaries, output destinations, and notification policy.
+| ✅ Command | Chinese Alias | What it does |
+|-----------|---------------|--------------|
+| **⚙️ Setup** | | |
+| `/lark-setup` | `/设置` `初始化助手` `配置助手` | Initialize data-source scope, privacy boundaries, output destinations, and notification policy. |
+| **📝 Reports** | | |
+| `/lark-daily-report` | `/日报` `今日工作总结` `昨天日报` | Generate a daily work report. |
+| `/lark-weekly-report` | `/周报` `本周总结` `上周周报` | Generate a weekly work report. |
+| `/lark-monthly-report` | `/月报` `本月总结` | Generate a monthly work report. |
+| `/lark-half-year-review` | `/半年总结` `年中总结` | Generate a half-year work review. |
+| `/lark-annual-review` | `/全年总结` `年终总结` | Generate an annual work review. |
+| `/lark-okr-review` | `/OKR复盘` | Review OKR progress and alignment. |
+| **📅 Planning** | | |
+| `/lark-today-plan` | `/今日规划` `今天做什么` | Plan today's work. |
+| `/lark-tomorrow-plan` | `/明日规划` `明天做什么` | Plan tomorrow's work. |
+| `/lark-weekly-plan` | `/本周规划` `下周规划` | Plan the week's priorities. |
+| `/lark-monthly-plan` | `/本月规划` `下月规划` | Plan the month's priorities. |
+| **🤖 Assistant Workflows** | | |
+| `/lark-meeting-brief` | `/会前简报` `会议准备` | Prepare a pre-meeting briefing. |
+| `/lark-meeting-minutes` | `/会议纪要` | Extract single-meeting minutes and follow-ups. |
+| `/lark-project-summary` | `/项目总结` `项目回顾` | Summarize a project from scattered Lark artifacts. |
+| `/lark-mail-check` | `/邮箱检查` `邮件检查` | Triage mailbox into actionable categories. |
+| `/lark-knowledge-capture` | `/知识沉淀` `文档沉淀` | Capture scattered context into a durable knowledge document. |
+| **📈 Growth** | | |
+| `/lark-work-diagnosis` | `/工作诊断` `工作状态分析` | Diagnose the work system (load, cadence, ownership, blockers). |
 
-Reports:
-- `/lark-daily-report`: daily report.
-- `/lark-weekly-report`: weekly report.
-- `/lark-monthly-report`: monthly report.
-- `/lark-half-year-review`: half-year review.
-- `/lark-annual-review`: annual review.
-- `/lark-okr-review`: OKR progress and alignment review.
-
-Planning:
-- `/lark-today-plan`: today's plan.
-- `/lark-tomorrow-plan`: tomorrow's plan.
-- `/lark-weekly-plan`: weekly plan.
-- `/lark-monthly-plan`: monthly plan.
-
-Assistant workflows:
-- `/lark-meeting-brief`: pre-meeting briefing.
-- `/lark-meeting-minutes`: single-meeting minutes and follow-up extraction.
-- `/lark-project-summary`: project summary.
-- `/lark-mail-check`: mailbox triage.
-- `/lark-document-memory`: durable document memory.
-- `/lark-message-watch`: recent message and mail monitoring.
-
-Growth:
-- `/lark-work-diagnosis`: diagnose the work system.
-- `/lark-work-coach`: professional work coaching.
-- `/lark-emotional-support`: non-clinical emotional support.
-
-Chinese aliases such as `/日报`, `/月报`, `/今日规划`, and `/工作诊断` are documented inside the relevant skills as model-routing aliases. For broad host compatibility, use the English `lark-*` command names as the stable skill names.
+For broad host compatibility, use the English `lark-*` command names as the stable skill names. Chinese aliases are model-routing hints and may not be recognized by all hosts.
 
 ## Installation
 

@@ -1,6 +1,6 @@
 # Planning Standards
 
-Use these standards for today, tomorrow, weekly, monthly, and custom-period planning skills. Command skills should stay self-contained; this file keeps shared behavior consistent.
+Use these standards for today, tomorrow, weekly, monthly, and custom-period planning.
 
 ## Preconditions
 
@@ -13,11 +13,15 @@ Use these standards for today, tomorrow, weekly, monthly, and custom-period plan
 
 Collect enough context to plan realistically, not enough to reconstruct the user's entire history:
 
-1. Calendar commitments in the planning window.
-2. Current tasks, overdue tasks, due-soon tasks, and explicit priorities.
-3. Recent meeting action items and unresolved decisions when they affect the plan.
-4. Relevant docs, project plans, OKRs, or prior planning docs for major goals.
-5. Recent IM/Mail asks only when requested, configured, or clearly necessary for urgent follow-up.
+1. **IM messages** — Fetch exhaustively. See `im-messages-guide.md`.
+   - Recent messages reveal what the user is actively pushing vs. what is stalled
+   - @mentions show where others are waiting on the user
+   - Chat distribution shows which projects are currently hot
+2. **Calendar commitments** in the planning window.
+3. **Current tasks, overdue tasks, due-soon tasks**, and explicit priorities.
+4. **Recent meeting action items** and unresolved decisions when they affect the plan.
+5. **Relevant docs, project plans, OKRs**, or prior planning docs for major goals.
+6. **Mail** only when requested, configured, or clearly necessary for urgent follow-up.
 
 For planning windows, `calendar +agenda --start ... --end ...` is the preferred concise calendar view.
 
@@ -25,7 +29,7 @@ For planning windows, `calendar +agenda --start ... --end ...` is the preferred 
 
 - Respect actual calendar capacity and focus time.
 - Separate `must do`, `should do`, and `could do`.
-- Distinguish user-owned deliverables from meetings the user merely attends.
+- Distinguish user-owned deliverables from meetings the user merely attends. Use IM evidence, not just calendar RSVP.
 - Use time-blocking only when calendar data supports it.
 - Highlight dependencies that need early alignment.
 - Suggest task or calendar changes as proposals, then ask before executing.
