@@ -1,0 +1,19 @@
+.DS_Store
+*.log
+*.tmp
+*.bak
+*.swp
+node_modules/
+.env
+.env.*
+!.env.example
+
+# Local assistant/user configuration
+.lark-assistant.json
+lark-assistant.json
+
+# Local generated report artifacts
+/daily_report.md
+/weekly_report.md
+/monthly_report.md
+/test-*.md
