@@ -17,3 +17,6 @@ lark-assistant.json
 /weekly_report.md
 /monthly_report.md
 /test-*.md
+
+# Project documentation not for distribution
+AGENTS.md
